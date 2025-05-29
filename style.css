@@ -1,0 +1,604 @@
+/* Basic Reset & Body Styling */
+body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Default light text color for dark mode */
+}
+
+body {
+    background-color: #1e1e1e; /* Dark background for the entire page */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background: #2c2c2c; /* Slightly lighter dark grey for header */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 80px;
+    border-bottom: #6a0dad 3px solid; /* Purple accent border */
+}
+
+header .logo-container {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+header #logo {
+    height: 60px; /* Adjust as needed */
+    margin-right: 15px;
+}
+
+/* Ensures logo link has no unwanted styling */
+.logo-home-link,
+.logo-home-link:hover {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+/* Updated Navigation Button Styles */
+header nav {
+    float: right;
+    margin-top: 20px; /* Adjusted slightly for button vertical alignment */
+}
+
+header nav ul {
+    list-style: none;
+    padding-left: 0; /* Ensure no default padding */
+}
+
+header nav ul li {
+    display: inline-block; /* Helps with consistent spacing of button-like elements */
+    margin: 0 4px; /* Adds a small space between each button */
+}
+
+header nav a {
+    display: inline-block; /* Crucial for applying padding and making it button-like */
+    padding: 8px 16px;   /* Vertical and horizontal padding for the button */
+    background-color: #4a4a4a; /* A medium-dark grey for the button background */
+    color: #f0f0f0;       /* Light text color */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85em;    /* Slightly adjusted font size for button aesthetic */
+    font-weight: bold;    /* Making text bold by default */
+    border-radius: 5px;   /* Rounded corners for the buttons */
+    border: 1px solid #5f5f5f; /* Subtle border around the button */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+header nav a:hover {
+    background-color: #6a0dad; /* Your primary purple accent on hover */
+    color: #ffffff;       /* White text on hover */
+    border-color: #7b1fa2; /* A slightly darker purple border on hover */
+}
+
+header nav a.active {
+    background-color: #8A2BE2; /* Your brighter purple for the active button */
+    color: #ffffff;       /* White text for active button */
+    border-color: #6a0dad; /* Darker purple border for active state to make it pop */
+    font-weight: bold;    /* Ensures active link text is bold */
+}
+/* End of Updated Navigation Button Styles */
+
+
+/* Hero Section (Homepage) */
+#hero {
+    background: #6a0dad; /* Purple background */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+/* Call-to-Action Buttons (General and Hero) */
+.cta-button {
+    display: inline-block;
+    background: #6a0dad; /* Purple background for general buttons */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.cta-button:hover {
+    background: #4c0981; /* Darker purple on hover */
+}
+
+#hero .cta-button { /* Main hero button */
+    background: #1e1e1e;
+    color: #fff;
+    border: 2px solid #8A2BE2; /* Purple border to make it pop */
+}
+
+#hero .cta-button:hover {
+    background: #8A2BE2; /* Purple background on hover */
+    color: #fff;
+    border-color: #8A2BE2;
+}
+
+#hero .cta-button.secondary {
+    background: transparent;
+    border: 2px solid #f0f0f0; /* Light border */
+    color: #f0f0f0; /* Light text */
+}
+
+#hero .cta-button.secondary:hover {
+    background: #f0f0f0;
+    color: #6a0dad; /* Purple text on hover */
+}
+
+/* Services Overview Section (Homepage) */
+#services-overview {
+    padding: 40px 0;
+    background: #2c2c2c; /* Dark background, distinct from body */
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+#services-overview h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.service-item { /* Used on Homepage Services Overview */
+    background: #363636;
+    padding: 20px;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+}
+
+.service-item h4 {
+    color: #8A2BE2; /* Brighter Purple accent */
+    margin-bottom: 10px;
+}
+.service-item p {
+    color: #c0c0c0;
+}
+
+/* Why Choose Us Section (Homepage) */
+#why-choose-us {
+    padding: 40px 0;
+    background: #1e1e1e; /* Matching body dark background */
+}
+
+#why-choose-us h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+#why-choose-us ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#why-choose-us ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 4px;
+    border-left: 3px solid #6a0dad;
+}
+
+/* Footer */
+footer {
+    background: #121212; /* Even darker for footer */
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+footer a {
+    color: #8A2BE2; /* Brighter Purple accent */
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* General Page Content Styling */
+.page-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Styles for Services Page Content (services.html) */
+#our-services h2 { /* Main heading on Services page */
+    text-align: center;
+    font-size: 2.2em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.services-intro { /* Intro paragraph on Services page */
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #c0c0c0;
+}
+
+.service-detail-section { /* Individual service blocks on Services page */
+    background-color: #2c2c2c;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #6a0dad;
+}
+
+.service-detail-section h3 {
+    font-size: 1.8em;
+    color: #8A2BE2;
+    margin-bottom: 15px;
+}
+
+.service-detail-section p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #d0d0d0;
+}
+
+.service-detail-section ul {
+    list-style: disc;
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+.service-detail-section ul li {
+    margin-bottom: 10px;
+    color: #c0c0c0;
+}
+
+/* Styles for Contact Page Content (contact.html) */
+#contact-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #c0c0c0;
+}
+
+.google-form-embed-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.google-form-embed-container iframe { /* Style for the iframe if needed */
+    max-width: 100%; /* Ensures iframe is responsive within its container */
+    border: none; /* Removes default iframe border */
+}
+
+.alternative-contact {
+    text-align: center;
+    background-color: #2c2c2c;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.alternative-contact h3 {
+    font-size: 1.8em;
+    color: #8A2BE2;
+    margin-bottom: 15px;
+}
+
+.alternative-contact p {
+    margin-bottom: 15px;
+    color: #d0d0d0;
+}
+
+.alternative-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.alternative-contact ul li {
+    margin-bottom: 10px;
+    color: #c0c0c0;
+}
+
+.alternative-contact ul li strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.business-hours-list {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.business-hours-list li {
+    color: #c0c0c0;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+/* Styles for Two-Column Layout on Contact Page Details */
+.contact-details-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+    gap: 25px; /* Space between the two columns/items */
+    margin-top: 30px; /* Space above this grid section */
+}
+
+/* Ensure items within the grid don't have conflicting margins */
+.current-provider-resources,
+.alternative-contact {
+    margin-top: 0; /* Remove original margin-top if any, as gap handles spacing */
+    margin-bottom: 0; /* Remove original margin-bottom, as gap handles spacing */
+}
+
+/* Styles for About Me Page Content (about.html) */
+#about-me-section {
+    background-color: #2c2c2c;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#about-me-section h2 { /* Main heading on About Me page */
+    text-align: center;
+    font-size: 2.2em;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.about-photo-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-photo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #6a0dad;
+}
+
+#about-me-section p {
+    margin-bottom: 18px;
+    line-height: 1.7;
+    color: #d0d0d0;
+    font-size: 1.05em;
+}
+
+.about-subsection {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #6a0dad;
+}
+
+.about-subsection h3 {
+    font-size: 1.6em;
+    color: #8A2BE2;
+    margin-bottom: 10px;
+}
+
+.about-cta {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.about-cta p {
+    font-size: 1.15em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Styles for Helpful Links Page Content (resources.html) */
+#helpful-links-section {
+    background-color: #2c2c2c;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+#helpful-links-section h2 { /* Main heading on Helpful Links page */
+    text-align: center;
+    font-size: 2.2em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.links-intro { /* Intro paragraph on Helpful Links page */
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #c0c0c0;
+}
+
+.links-category {
+    margin-bottom: 0; /* Adjusted for grid layout */
+    padding: 20px;
+    background-color: #363636;
+    border-radius: 6px;
+    border-left: 4px solid #6a0dad;
+}
+
+.links-category h3 { /* Main category titles */
+    font-size: 1.6em;
+    color: #8A2BE2;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+/* Style for State Subheadings (h4) in Helpful Links */
+.links-category h4 {
+    font-size: 1.3em;
+    color: #d0d0d0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #555;
+}
+
+.links-category h4:first-of-type {
+    margin-top: 0;
+}
+
+.links-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.links-list li {
+    margin-bottom: 12px;
+    padding: 8px;
+    background-color: #404040;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.links-list li:hover {
+    background-color: #4f4f4f;
+}
+
+.links-list li a {
+    color: #8A2BE2; /* Updated purple color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links-list li a:hover {
+    text-decoration: underline;
+    color: #9F50FF; /* Updated hover purple color */
+}
+
+/* Styles for Two-Column Layout on Helpful Links Page */
+.link-categories-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+    gap: 25px; /* Space between category boxes */
+}
+
+/* Responsive adjustments (basic) */
+@media(max-width: 768px){
+    header .logo-container,
+    header nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block; /* Stack nav buttons vertically on small screens */
+        margin: 8px 0;  /* Add some vertical margin when stacked */
+    }
+    header nav a { /* Ensure buttons take more width when stacked if desired */
+        display: block; /* Make buttons take full available width in nav when stacked */
+        text-align: center;
+    }
+
+    header #logo {
+        margin-bottom:10px;
+    }
+    header h1 {
+       font-size: 1.5em;
+       color: #fff; /* Ensure H1 color remains readable */
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+    #hero p {
+        font-size: 1em;
+    }
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+     #why-choose-us ul li {
+        font-size: 1em;
+    }
+
+    /* Ensure grid layouts stack to single column on smaller screens */
+    .contact-details-grid-wrapper,
+    .link-categories-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media Query for two columns on wider screens for Helpful Links */
+@media (min-width: 768px) {
+    .link-categories-grid-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    }
+}
+
+/* Media Query for two columns on wider screens for Contact Page Details */
+@media (min-width: 768px) {
+    .contact-details-grid-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    }
+}

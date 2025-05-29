@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pocket Docs Billing LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <base href="https://natalie808.github.io/pd-website/">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="/index.html" class="logo-home-link">
+                    <img src="PocketDocsLogo.png" alt="Pocket Docs Billing LLC Logo" id="logo"> </a>
+                <h1>Pocket Docs Billing LLC</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/resources.html">Helpful Links</a></li>
+                    <li><a href="/contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section id="contact-section">
+            <h2>Get in Touch</h2>
+            <p class="contact-intro">We'd love to hear from you! Please fill out the form below for general inquiries, and we'll get back to you as soon as possible. You can also find other ways to reach us, our business hours, and specific links for current providers further down the page.</p>
+
+            <div class="google-form-embed-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyb0RxlPUkqU2T74XXZBGLG1XdyTYkc2O-z50UjN0L85UN2g/viewform?embedded=true" width="640" height="1593" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+
+            <div class="contact-details-grid-wrapper">
+
+                <div class="current-provider-resources">
+                    <h3>For Our Current Providers</h3>
+                    <p>If you are an existing client and need to submit a service request, please use the link below:</p>
+                    <a href="https://forms.gle/gAn3MqYJaw7o2MLm9" target="_blank" rel="noopener noreferrer" class="cta-button provider-form-button">Current Provider Service Request</a>
+                </div>
+
+                <div class="alternative-contact">
+                    <h3>Other Ways to Reach Us & Hours</h3>
+                    <p>If you prefer, you can also contact us directly or note our business hours:</p>
+                    <ul>
+                        <li><strong>Business Hours:</strong>
+                            <ul class="business-hours-list">
+                                <li>Monday - Thursday: 10:00 AM - 6:30 PM</li>
+                                <li>Friday: By Appointment Only</li>
+                            </ul>
+                        </li>
+                        <li><strong>Email:</strong> <a href="mailto:admin@pocket-docs.com">admin@pocket-docs.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:5752084797">575.208.4797</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Pocket Docs Billing LLC. All Rights Reserved.</p>
+            <p><a href="/contact.html">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
