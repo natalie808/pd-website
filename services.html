@@ -11,18 +11,18 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <a href="/index.html" class="logo-home-link">
+                <a href="index.html" class="logo-home-link">
                     <img src="PocketDocsLogo.png" alt="Pocket Docs Billing LLC Logo" id="logo">
                 </a>
                 <h1>Pocket Docs Billing LLC</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About Me</a></li>
-                    <li><a href="/services.html" class="active">Services</a></li>
-                    <li><a href="/resources.html">Helpful Links</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="resources.html">Helpful Links</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,3 +61,20 @@
                     <li>Setting up your clinic within the EHR system.</li>
                     <li>Adding and managing provider accounts as needed.</li>
                     <li>Electronic Data Interchange (EDI) enrollment assistance.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Pocket Docs Billing LLC. All Rights Reserved.</p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
