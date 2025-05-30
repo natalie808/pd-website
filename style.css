@@ -604,9 +604,9 @@ footer a:hover {
 }
 
 #about-photo, .about-photo {
-    width: 340px;        /* Wider */
-    height: 220px;       /* Taller */
-    border-radius: 50%;  /* Perfect oval shape */
+    width: 340px;        /* Keep this as wide as you want */
+    height: 280px;       /* Increased height for a taller oval */
+    border-radius: 50%;  /* Keeps it an oval shape */
     object-fit: cover;
     border: 4px solid #000;  /* Black border */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
