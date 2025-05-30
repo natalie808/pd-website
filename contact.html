@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Pocket Docs Billing LLC</title>
+    <title>Contact - Pocket Docs Billing LLC</title>
     <link rel="stylesheet" href="style.css">
     <base href="https://natalie808.github.io/pd-website/">
 </head>
@@ -11,17 +11,18 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <a href="/index.html" class="logo-home-link">
-                    <img src="PocketDocsLogo.png" alt="Pocket Docs Billing LLC Logo" id="logo"> </a>
+                <a href="index.html" class="logo-home-link">
+                    <img src="PocketDocsLogo.png" alt="Pocket Docs Billing LLC Logo" id="logo">
+                </a>
                 <h1>Pocket Docs Billing LLC</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="resources.html">Helpful Links</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,44 +30,44 @@
 
     <main class="container page-content">
         <section id="contact-section">
-            <h2>Get in Touch</h2>
-            <p class="contact-intro">We'd love to hear from you! Please fill out the form below for general inquiries, and we'll get back to you as soon as possible. You can also find other ways to reach us, our business hours, and specific links for current providers further down the page.</p>
+            <h2>Contact</h2>
+            <p>Have questions or want to learn more? Reach out below!</p>
+            
+            <!-- Calendar Button Above Email -->
+            <a href="https://calendar.google.com/calendar/u/0?cid=bmF0YWxpZUBwb2NrZXQtZG9jcy5jb20"
+               class="cta-button"
+               target="_blank"
+               rel="noopener">
+                Request a Meeting w/ Natalie
+            </a>
 
-            <div class="google-form-embed-container">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyb0RxlPUkqU2T74XXZBGLG1XdyTYkc2O-z50UjN0L85UN2g/viewform?embedded=true" width="640" height="1593" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:natalie@pocket-docs.com">natalie@pocket-docs.com</a></p>
+                <p>Phone: <a href="tel:+15555555555">(555) 555-5555</a></p>
             </div>
-
-            <div class="contact-details-grid-wrapper">
-
-                <div class="current-provider-resources">
-                    <h3>For Our Current Providers</h3>
-                    <p>If you are an existing client and need to submit a service request, please use the link below:</p>
-                    <a href="https://forms.gle/gAn3MqYJaw7o2MLm9" target="_blank" rel="noopener noreferrer" class="cta-button provider-form-button">Current Provider Service Request</a>
-                </div>
-
-                <div class="alternative-contact">
-                    <h3>Other Ways to Reach Us & Hours</h3>
-                    <p>If you prefer, you can also contact us directly or note our business hours:</p>
-                    <ul>
-                        <li><strong>Business Hours:</strong>
-                            <ul class="business-hours-list">
-                                <li>Monday - Thursday: 10:00 AM - 6:30 PM</li>
-                                <li>Friday: By Appointment Only</li>
-                            </ul>
-                        </li>
-                        <li><strong>Email:</strong> <a href="mailto:admin@pocket-docs.com">admin@pocket-docs.com</a></li>
-                        <li><strong>Phone:</strong> <a href="tel:5752084797">575.208.4797</a></li>
-                    </ul>
-                </div>
-
-            </div>
+            
+            <!-- Optional: Contact form (remove if you don't use a form) -->
+            <!--
+            <form id="contact-form" action="mailto:natalie@pocket-docs.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            -->
         </section>
     </main>
 
     <footer>
         <div class="container">
             <p>&copy; <span id="currentYear"></span> Pocket Docs Billing LLC. All Rights Reserved.</p>
-            <p><a href="/contact.html">Contact Us</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
         </div>
     </footer>
 
