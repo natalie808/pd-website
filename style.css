@@ -604,14 +604,13 @@ footer a:hover {
 }
 
 #about-photo, .about-photo {
-    width: 280px;        /* Make wider */
-    height: 180px;       /* Make taller */
-    border-radius: 50%;  /* Oval effect */
+    width: 340px;        /* Wider */
+    height: 220px;       /* Taller */
+    border-radius: 50%;  /* Perfect oval shape */
     object-fit: cover;
     border: 4px solid #000;  /* Black border */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     display: block;
     margin: 0 auto;
 }
-
 
