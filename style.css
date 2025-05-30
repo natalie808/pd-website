@@ -614,3 +614,12 @@ footer a:hover {
     margin: 0 auto;
 }
 
+.contact-info a {
+    color: #8A2BE2;  /* Brighter Purple accent, same as footer */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
